@@ -1,0 +1,6 @@
+const Koa = require('koa')
+const router = require('./router/router')
+const app = new Koa()
+app.use(router.routes())
+app.listen(8080)
+console.log('listen is:', 8080)
